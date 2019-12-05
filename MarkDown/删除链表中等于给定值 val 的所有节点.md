@@ -1,28 +1,33 @@
 1. 删除链表中等于给定值 **val** 的所有节点。
-   class  ListNode{
-       int val;
-       ListNode next;
-       ListNode(ListNode next,int val){
-           this.next = null;
-           this.val = val;
+   
+   ```
+    class  ListNode{
+          int val;
+          ListNode next;
+          ListNode(ListNode next,int val){
+              this.next = null;
+              this.val = val;
+          }
+          ListNode(int val){
+              this(null,val);
+          }
+          @Override
+          public String toString(){
+              return String.format("ListNode{%d}",val);
+          }
+   
+   }
+   public class LeetCode {
+       public static void printLinkedList(ListNode head){
+           ListNode cur = head;
+           while(cur != null){
+               System.out.println(cur.val);
+               cur = cur.next;
+           }
        }
-       ListNode(int val){
-           this(null,val);
-       }
-       @Override
-       public String toString(){
-           return String.format("ListNode{%d}",val);
-       }
-
-}
-public class LeetCode {
-    public static void printLinkedList(ListNode head){
-        ListNode cur = head;
-        while(cur != null){
-            System.out.println(cur.val);
-            cur = cur.next;
-        }
-    }
+   ```
+   
+   
 
     public static ListNode buildLinkedList() {
         ListNode n1 = new ListNode(1);

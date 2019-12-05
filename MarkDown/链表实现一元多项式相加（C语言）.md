@@ -1,5 +1,6 @@
 两个多项式相加，若其所有指数相同，则将对应系数相加，若指数不同，则先插入指数较小的项到链表中
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include<malloc.h>
@@ -129,3 +130,5 @@ int main(){
 	return 0;
 	
 }
+```
+

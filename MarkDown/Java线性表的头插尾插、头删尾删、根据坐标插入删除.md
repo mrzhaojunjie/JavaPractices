@@ -1,3 +1,4 @@
+```
 Java线性表的头插尾插、头删尾删、根据坐标插入删除
 
 import java.util.Arrays;
@@ -20,6 +21,9 @@ public class MyArrayList {
     public void pushBack(int element){
         array[size] = element;
         size++;
+```
+
+
 
     }
     //头插
