@@ -16,6 +16,7 @@ public class Card {
 
 
 
+```
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,6 +27,9 @@ public class pork {
         List<Card> deck = new ArrayList<>(52);
         for(int i=0;i<4;i++){  //四种花色
             for(int j=0;j<13;j++){  //每种花色十三张
+```
+
+
 
                 Card card = new Card(j+1,huase[i]);
                 deck.add(card);

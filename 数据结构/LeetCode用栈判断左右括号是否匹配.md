@@ -13,6 +13,8 @@ import java.util.Stack;
 //若遇到右括号，获取栈顶元素并且删除，判断栈顶元素是否和右括号相匹配，若匹配
 //继续遍历剩余的字符，若不匹配，直接返回false
 //最后判断栈是否为空 若为空，则返回true 否则返回false
+
+```
 public class MatchDemo {
     public static boolean matchdemo(String s){
         final char[][] array = {{'(',')'},{'{','}'},{'[',']'}}; //给出char二位维数组存储括号
@@ -50,3 +52,6 @@ public class MatchDemo {
         System.out.println(matchdemo(sb));
     }
 }
+```
+
+
